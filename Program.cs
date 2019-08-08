@@ -10,11 +10,12 @@ namespace NET.A._2019.Usenko._01
     {
         static void Main(string[] args)
         {
-
             CheckQuickSort();
             CheckMergeSort();
         }
 
+        //<summary> Method for cheking merge sort 
+        //</summary>
         static void CheckMergeSort()
         {
             var arrayForCheck1 = new int[] { 9, 184, 1, 52, 461, 6, 265, 26, 7, 1, 5, 8, 435, 23, 6, 72, 34, 62, 345, 234, 62 };
@@ -44,7 +45,9 @@ namespace NET.A._2019.Usenko._01
             Console.ReadKey();
         }
 
-        static void CheckQuickSort()
+        //<summary> Method for cheking quick sort 
+        //</summary>
+                static void CheckQuickSort()
         {
             var arrayForCheck1 = new int[] { 9, 184, 1, 52, 461, 6, 265, 26, 7, 1, 5, 8, 435, 23, 6, 72, 34, 62, 345, 234, 62 };
             var arrayForCheck2 = new int[] { -9, 184, 1, 52, -461, 6, 265, 26, -7, 1, 5, 8, 435, -23, 6, 72, 34, -62, 345, 234, 62 };

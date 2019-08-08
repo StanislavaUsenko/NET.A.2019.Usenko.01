@@ -8,7 +8,7 @@ namespace NET.A._2019.Usenko._01
 {
     public class QuickSortMethod
     {
-        //method for swaping array elements
+        //<summary> method for swaping array elements </summary>
         static void Swap (ref int x, ref int y)
         {
             var t = x;
@@ -16,7 +16,7 @@ namespace NET.A._2019.Usenko._01
             y = t;
         }
 
-        //method returns the index of the reference element
+        //<summary> method returns the index of the reference element </summary>
         static int Partition(int[] array, int minIndex, int maxIndex)
         {
             var pivot = minIndex - 1;
@@ -34,7 +34,7 @@ namespace NET.A._2019.Usenko._01
             return pivot;
         }
 
-        //main method
+        //<summary> main method </summary>
         static int[] QuickSort(int[] array, int minIndex, int maxIndex)
         {
             if (minIndex >= maxIndex)
@@ -48,6 +48,9 @@ namespace NET.A._2019.Usenko._01
 
             return array;
         }
+
+        
+        //<summary> quick sort </summary>
         public static int[] QuickSort(int[] array)
         {
             return QuickSort(array, 0, array.Length - 1);

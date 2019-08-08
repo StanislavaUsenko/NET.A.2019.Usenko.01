@@ -8,7 +8,7 @@ namespace NET.A._2019.Usenko._01
 {
     class MergeSortMethod
     {
-        //method for merging arrays
+        //<summary> method for merging arrays </summary>
         static void Merge(int[] array, int lowIndex, int middleIndex, int highIndex)
         {
             var left = lowIndex;
@@ -50,7 +50,7 @@ namespace NET.A._2019.Usenko._01
             }
         }
 
-        //merge sort
+        //<summary> merge sort </summary>
         static int[] MergeSort(int[] array, int lowIndex, int highIndex)
         {
             if (lowIndex < highIndex)
@@ -64,8 +64,8 @@ namespace NET.A._2019.Usenko._01
             return array;
         }
 
-        //merge sort
-         public static int[] MergeSort(int[] array)
+        //<summary> merge sort </summary>
+        public static int[] MergeSort(int[] array)
         {
             return MergeSort(array, 0, array.Length - 1);
         }
